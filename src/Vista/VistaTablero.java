@@ -8,6 +8,7 @@ package Vista;
 import Controlador.Controlador;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -76,6 +77,7 @@ public class VistaTablero extends javax.swing.JFrame {
         c46 = new javax.swing.JButton();
         c47 = new javax.swing.JButton();
         c50 = new javax.swing.JButton();
+        c50.setIcon(new ImageIcon(VistaTablero.class.getResource("/Imagenes/fa87df506459fb2a852eeb5d87cc20b6.gif")));
         c51 = new javax.swing.JButton();
         c52 = new javax.swing.JButton();
         c53 = new javax.swing.JButton();
@@ -495,13 +497,15 @@ public class VistaTablero extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         layout.setHorizontalGroup(
         	layout.createParallelGroup(Alignment.LEADING)
-        		.addComponent(jPanel1, GroupLayout.DEFAULT_SIZE, 936, Short.MAX_VALUE)
+        		.addGroup(layout.createSequentialGroup()
+        			.addComponent(jPanel1, GroupLayout.PREFERRED_SIZE, 916, GroupLayout.PREFERRED_SIZE)
+        			.addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
         	layout.createParallelGroup(Alignment.LEADING)
         		.addGroup(layout.createSequentialGroup()
-        			.addComponent(jPanel1, GroupLayout.PREFERRED_SIZE, 818, GroupLayout.PREFERRED_SIZE)
-        			.addContainerGap(19, Short.MAX_VALUE))
+        			.addComponent(jPanel1, GroupLayout.PREFERRED_SIZE, 784, GroupLayout.PREFERRED_SIZE)
+        			.addContainerGap(39, Short.MAX_VALUE))
         );
         getContentPane().setLayout(layout);
 
@@ -627,5 +631,4 @@ public class VistaTablero extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
-    // End of variables declaration//GEN-END:variables
 }
